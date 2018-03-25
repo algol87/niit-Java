@@ -7,6 +7,7 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.*;
 
+
 public class MainTest {
     private final ByteArrayOutputStream outStream=new ByteArrayOutputStream();
 
@@ -21,6 +22,6 @@ public class MainTest {
     @Test
     public void main() {
         Main.main(new String[]{""});
-        assertEquals("Сумма 5 и 6 равна 11",outStream.toString());
+        assertEquals("Сумма 5 и 6 равна 11\r\n",outStream.toString());
     }
 }
