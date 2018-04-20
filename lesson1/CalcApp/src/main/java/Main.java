@@ -25,3 +25,4 @@ public class Main {
         System.out.println("Сумма "+x+" и "+y+" равна "+z);
     }
 }
+
