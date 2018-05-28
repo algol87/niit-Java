@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="496.0" prefWidth="614.0">
+         <children>
+            <HBox layoutX="14.0" layoutY="19.0" prefHeight="458.0" prefWidth="588.0" spacing="10.0">
+               <children>
+                  <TableView fx:id="tblCatalog" prefHeight="458.0" prefWidth="418.0">
+                    <columns>
+                      <TableColumn fx:id="tbcId" prefWidth="36.0" text="N" />
+                      <TableColumn fx:id="tbcTitle" prefWidth="162.0" text="Название" />
+                        <TableColumn fx:id="tbcAuthor" prefWidth="142.0" text="Авторы" />
+                        <TableColumn fx:id="tbcYear" prefWidth="77.0" text="Год" />
+                    </columns>
+                  </TableView>
+                  <VBox prefHeight="458.0" prefWidth="176.0" spacing="10.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="23.0" prefWidth="175.0" text="N" />
+                        <TextField fx:id="tfId" text="000001" />
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="175.0" text="Название" />
+                        <TextField fx:id="tfTitle" text="War and Peace" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="184.0" text="Авторы" />
+                        <TextField fx:id="tfAuthor" text="Leo Tolstoy" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="194.0" text="Год" />
+                        <TextField fx:id="tfYear" text="2000" />
+                        <Button fx:id="btnAdd" alignment="CENTER" mnemonicParsing="false" onAction="#addClick" prefHeight="25.0" prefWidth="171.0" text="Добавить" />
+                        <Button fx:id="btnOpen" mnemonicParsing="false" onAction="#onClickOpen" prefHeight="47.0" prefWidth="170.0" text="Открыть" />
+                        <Button fx:id="btnSelect" mnemonicParsing="false" onAction="#onClickSelect" prefHeight="34.0" prefWidth="170.0" text="Отбор" />
+                        <CheckBox fx:id="chBoxFilter" mnemonicParsing="false" text="Отбор" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
